@@ -5,8 +5,9 @@
       space-x-3
       py-7
       px-7
-      uppercase
-      justify-around items-center
+      
+      justify-around
+      items-center
       text-sm
       tracking-wider
     "
@@ -30,17 +31,73 @@
         ></path>
       </svg>
     </div>
-    <div class="flex space-x-3 items-center">
+    <div class="flex space-x-3 items-center uppercase">
       <p class="font-bold border-b-4 border-black">man</p>
       <p class="font-light text-gray-600">women</p>
     </div>
-    <div class="">
-      <input
-        class="w-96 border-b font-light"
-        placeholder="Search ..."
-        type="text"
-      />
-    </div>
+    <form class="w-1/5">
+      <div class="relative mx-auto max-w-lg">
+        <input
+          type="text"
+          placeholder="search ..."
+          class="
+            cursor-pointer
+            focus:cursor-text
+            peer
+            relative
+            z-10
+            h-12
+            w-12
+            rounded-full
+            border
+            bg-transparent
+            pl-12
+            outline-none
+            duration-300
+            delay-150
+            ease-out
+            focus:w-full focus:border-gray-500 focus:pl-16 focus:transition
+          "
+        />
+         <div class="invisible peer-focus:visible peer-focus:transition duration-300 absolute border rounded shadow-lg border-gray-50  bg-white w-full z-50 py-6">
+           <div class="px-6 space-y-4">
+             
+             <p class="tracking text-gray-400">Popular Search Terms</p>
+             <hr>
+             <p>Air Force 1</p>
+             <p>Jordan</p>
+             <p>Air max</p>
+             <p>Blazer</p>
+             <p>Gifts</p>
+            </div>
+         </div>
+         
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="
+            absolute
+            inset-y-0
+            my-auto
+            h-8
+            w-12
+            border-r border-transparent
+            stroke-gray-500
+            p-2
+            peer-focus:border-gray-500 peer-focus:stroke-gray-900
+          "
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+          />
+        </svg>
+      </div>
+    </form>
     <div class="flex space-x-7">
       <svg
         xmlns="http://www.w3.org/2000/svg"
