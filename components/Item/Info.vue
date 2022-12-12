@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="py-4">
     <img :src="activeItemImage" alt="" />
     <div class="py-2 gap-2 hidden group-hover:block">
       <div class="gap-2 flex">
